@@ -20,7 +20,7 @@ title                    : "About - Willmer Quinones"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Will Rafell"
-description              : "Ph.D Student of KAIST Graduate School of Knowledge Service Engineering"
+description              : "Personal Academic Profile"
 url                      : "https://wrafell.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "WRafell/wrafell.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -95,8 +95,8 @@ analytics:
 # Site Author
 author:
   name             : "Willmer Quinones"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "My personal page (?)"
+  avatar           : "/assets/images/profile-photo2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Ph.D Student of KAIST Graduate School of Knowledge Service Engineering"
   location         : "South Korea"
   email            :
   links:
