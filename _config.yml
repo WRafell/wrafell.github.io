@@ -101,7 +101,7 @@ author:
   email            :
   links:
     - label: "Curriculum Vitae (PDF)"
-      icon: "fas fa-file-pdf"
+      icon: "fas fa-fw fa-file-pdf"
       url: "/assets/files/cv.pdf"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
