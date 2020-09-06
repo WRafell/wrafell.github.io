@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "About - Willmer Quinones"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Will Rafell"
+name                     : "Willmer Quinones"
 description              : "Personal Academic Profile"
 url                      : "https://wrafell.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
