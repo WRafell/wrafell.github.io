@@ -19,8 +19,8 @@ locale                   : "en-US"
 title                    : "About - Willmer Quinones"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Willmer Quinones"
-description              : "Personal Academic Profile"
+name                     : &name "Willmer Quinones"
+description              : &description "Personal Academic Profile"
 url                      : "https://wrafell.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "WRafell/wrafell.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -71,7 +71,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -94,10 +94,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Willmer Quinones"
+  name             : *name
   avatar           : "/assets/images/profile-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Ph.D Student of KAIST Graduate School of Knowledge Service Engineering"
-  location         : "South Korea"
+  location         : "Rep. of Korea"
   email            :
   links:
     - label: "Curriculum Vitae (PDF)"
@@ -286,8 +286,16 @@ defaults:
       related: true
   # _pages
   - scope:
-      path: ""
+      path: "_pages"
       type: pages
     values:
       layout: single
       author_profile: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
