@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Will Rafell"
+title                    : "Willmer Quinones"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Will Rafell"
-description              : "My personal webpage for academic purposes."
+description              : "Ph.D Student of KAIST Graduate School of Knowledge Service Engineering"
 url                      : "https://wrafell.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "WRafell/wrafell.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -138,7 +138,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/wrafell"
+      #url: "https://instagram.com/wrafell"
 
 
 # Reading Files
