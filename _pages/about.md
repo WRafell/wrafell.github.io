@@ -12,7 +12,7 @@ redirect_from:
 
 ### About
 
-Hi! I am a Ph.D. student in the [Graduate School of Knowledge Service Engineering](https://kse.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/en/), advised by [Mun Yong Yi](http://kirc.kaist.ac.kr/people_director.html). My research interests are in developing and applying deep learning-based systems to assist and improve the fields of healthcare, visual recognition, natural language understanding, and cognitive science.
+Hi! I am a Ph.D. student in the [Graduate School of Knowledge Service Engineering](https://kse.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/en/), and currently been advised by [Mun Yong Yi](http://kirc.kaist.ac.kr/people_director.html) as part of [KIRC](http://kirc.kaist.ac.kr/)(Knowledge Innovation Research Center). My research interests are in developing and applying deep learning-based systems to assist and improve the fields of healthcare, visual recognition, natural language understanding, and cognitive science.
 
 ### Education
 
