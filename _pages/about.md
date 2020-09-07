@@ -16,5 +16,5 @@ Hi! I am a Ph.D. student in the [Graduate School of Knowledge Service Engineerin
 
 ### Education
 
-- M.S. in Knowledge Service Engineering, KAIST, Rep. of Korea, *February 2018*
+- M.S. in Knowledge Service Engineering, KAIST, Rep. of Korea, *February 2020*
 - B.S. in Electronic and Communication Engineering, INTEC, Dominican Republic, *August 2014*
