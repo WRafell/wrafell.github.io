@@ -12,7 +12,7 @@ redirect_from:
 
 ### About
 
-Hi! I am a Ph.D. student in the [Graduate School of Data Science](https://gsds.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/en/), and currently been advised by [Mun Yong Yi](http://kirc.kaist.ac.kr/people_director.html) as part of [KIRC](http://kirc.kaist.ac.kr/) (*Knowledge Innovation Research Center*). My research interests are in developing and applying deep learning-based systems to assist and improve the fields of healthcare, visual recognition, and cognitive science.
+Hi! I am a Postdoctoral Research Fellow at [UNIST](https://www.unist.ac.kr/), working with [Jaejun Yoo](https://sites.google.com/view/jaejunyoo/home) in the [Lab of Advanced Imaging Technology (LAIT)](https://sites.google.com/view/jaejunyoo/home). I received my Ph.D. from the [Graduate School of Data Science](https://gsds.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/en/), where I was advised by [Mun Yong Yi](http://kirc.kaist.ac.kr/people_director.html) as part of [KIRC](http://kirc.kaist.ac.kr/) (*Knowledge Innovation Research Center*). My research interests are in developing and applying deep learning-based systems to assist and improve the fields of healthcare, visual recognition, and computational imaging.
 
 
 ### Education
@@ -23,6 +23,11 @@ Hi! I am a Ph.D. student in the [Graduate School of Data Science](https://gsds.k
 *Feb 2018 - Feb 2020*
 - B.S., Electronic and Communication Engineering, INTEC, Dominican Republic
 *Feb 2011 - Aug 2014*
+
+### Experience
+
+- Postdoctoral Research Fellow, [LAIT](https://sites.google.com/view/jaejunyoo/home), UNIST, South Korea
+*Mar 2025 - Present*
 
 
 ### Publications
