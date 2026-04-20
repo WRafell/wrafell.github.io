@@ -40,8 +40,14 @@ Hi! I am a Postdoctoral Research Fellow at [UNIST](https://www.unist.ac.kr/), wo
 
 - Kim, M., **Quiñones Robles, W. R.**, Ko, Y. S., Wong, B., Lee, S., & Yi, M. Y. (2024). A predicted-loss based active learning approach for robust cancer pathology image analysis in the workplace. BMC Medical Imaging, 24(1), 5.
 
-### Under Review Papers
+- Noree, S., **Quiñones Robles, W. R.**, Ko, Y. S., & Yi, M. Y. (2025). Leveraging commonality across multiple tissue slices for enhanced whole slide image classification using graph convolutional networks. BMC Medical Imaging, 25(1), 11.
 
-- **Quinones, W. R.**, Noree, S., Ko, Y. S., & Yi, M. Y. (2024). Artificial Class Activation Maps using Fractals: A New Data Augmentation Strategy for Deep Learning-based Whole-Slide Image Analysis. Under Review
+- Kim, J. W., Wong, B., Fu, H., **Quiñones Robles, W. R.**, Ko, Y. S., & Yi, M. Y. (2025). MicroMIL: Graph-Based Multiple Instance Learning for Context-Aware Diagnosis with Microscopic Images. In International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI).
+
+### Preprints / Under Review
+
+- **Quiñones Robles, W. R.**, Noree, S., Ko, Y. S., & Yi, M. Y. (2024). Artificial Feature Maps using Fractals: A New Data Augmentation Strategy for Deep Learning-based Whole-Slide Image Analysis. Under Review.
+
+- **Quiñones Robles, W. R.**, Noree, S., Ko, Y. S., Wong, B., Kim, J., & Yi, M. Y. (2025). Leveraging Spatial Context for Positive Pair Sampling in Histopathology Image Representation Learning. arXiv preprint.
 
 
