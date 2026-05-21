@@ -4,5 +4,183 @@
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+// Override skin and import theme
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// ============================================================
+// Computational Naturalist — custom overrides
+// ============================================================
+
+// --- Typography ---
+
+body {
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title,
+.site-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+h1, .page__title { font-size: 2.2em; font-weight: 300; }
+h2 { font-size: 1.6em; font-weight: 400; }
+h3 { font-size: 1.2em; font-weight: 500; }
+
+code, pre, kbd, samp,
+.highlight {
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  font-size: 0.85em;
+}
+
+// --- Masthead / Navigation ---
+
+.masthead {
+  background-color: #0D0D0D;
+  border-bottom: 1px solid #252525;
+
+  &__inner-wrap {
+    padding: 0.8em 1em;
+  }
+}
+
+.site-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: none;
+}
+
+.greedy-nav {
+  background: transparent;
+
+  a {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.78em;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+}
+
+// --- Author sidebar ---
+
+.author__name {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.author__bio {
+  font-size: 0.82em;
+  font-weight: 300;
+  color: #B8B3AA;
+  line-height: 1.6;
+}
+
+.author__urls a {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+// --- Page content ---
+
+.page__content {
+  line-height: 1.8;
+
+  p { font-weight: 300; }
+
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(158, 130, 103, 0.35);
+    transition: border-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      border-color: rgba(158, 130, 103, 0.8);
+    }
+  }
+
+  h3 {
+    margin-top: 2em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #252525;
+    font-weight: 500;
+    font-size: 1.05em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #B8B3AA;
+  }
+}
+
+// --- Archive / blog listing ---
+
+.archive {
+  .archive__item-title {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+
+    a { border-bottom: none; }
+  }
+
+  .archive__item-excerpt {
+    font-size: 0.88em;
+    font-weight: 300;
+    color: #B8B3AA;
+    line-height: 1.7;
+  }
+}
+
+.list__item {
+  border-bottom: 1px solid #1E1E1E;
+  padding-bottom: 1.4em;
+  margin-bottom: 1.4em;
+}
+
+.page__meta {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72em;
+  letter-spacing: 0.06em;
+  color: #7A756E;
+  text-transform: uppercase;
+}
+
+// --- Footer ---
+
+.page__footer {
+  font-size: 0.78em;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: #5A5550;
+  border-top: 1px solid #1E1E1E;
+}
+
+// --- Subtle section dividers ---
+
+hr {
+  border: none;
+  border-top: 1px solid #252525;
+  margin: 2em 0;
+}
+
+// --- Code blocks ---
+
+.highlight {
+  border-radius: 2px;
+  border: 1px solid #1E1E1E;
+}
+
+// --- Smooth link transitions ---
+
+a {
+  transition: color 0.2s ease;
+}

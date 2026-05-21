@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Computational Naturalist skin
+   Warm dark palette — dark academia meets modern lab
+   ========================================================================== */
+
+/* Colors */
+$background-color: #111111 !default;
+$text-color: #EAE6DC !default;
+$muted-text-color: mix(#000, $text-color, 30%) !default;
+$primary-color: #8B6F56 !default;           // copper/burnt sienna
+$border-color: #252525 !default;
+$code-background-color: #191919 !default;
+$code-background-color-dark: #141414 !default;
+$form-background-color: #1A1A1A !default;
+$footer-background-color: #0D0D0D !default;
+$link-color: #9E8267 !default;              // warm copper
+$link-color-hover: mix(#fff, $link-color, 20%) !default;
+$link-color-visited: mix(#000, $link-color, 15%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#fff, $text-color, 20%) !default;
+$navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
+
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
