@@ -37,5 +37,5 @@ FL typically follows an *aggregate-then-adapt* loop:
 - **Privacy and Security:** Requires secure aggregation and client selection mechanisms.
 
 ---
-
 **Source:** McMahan et al., 2017 — *Communication-Efficient Learning of Deep Networks from Decentralized Data*
+---
