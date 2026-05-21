@@ -3,12 +3,19 @@ permalink: /
 layout: single
 title: "About"
 excerpt: "About me"
-author_profile: true
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 
 ---
+
+<div style="display:flex; align-items:center; gap:2.5em; margin-bottom:2.5em;">
+  <img src="/assets/images/profile-photo.jpg" alt="Willmer Quinones" style="width:140px; height:140px; object-fit:cover; border-radius:2px; filter:grayscale(15%);">
+  <div style="width:120px; height:120px; border-radius:50%; border:1px solid #9B3D2E; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
+    <span style="font-family:'Cormorant Garamond',serif; font-size:2em; font-weight:300; color:#9B3D2E; letter-spacing:0.06em;">WQ</span>
+  </div>
+</div>
 
 <button id="lang-btn" onclick="toggleLang()" style="
   background: transparent;
