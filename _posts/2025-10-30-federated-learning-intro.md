@@ -8,6 +8,7 @@ tags:
   - machine-learning
 excerpt: "A decentralized ML paradigm where clients collaboratively train a model without sharing private data."
 ---
+# Introduction to Federated Learning
 
 ## Summary
 

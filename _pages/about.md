@@ -10,13 +10,6 @@ redirect_from:
 
 ---
 
-<div style="display:flex; align-items:center; gap:2.5em; margin-bottom:2.5em;">
-  <img src="/assets/images/profile-photo.jpg" alt="Willmer Quinones" style="width:140px; height:140px; object-fit:cover; border-radius:2px; filter:grayscale(15%);">
-  <div style="width:120px; height:120px; border-radius:50%; border:1px solid #9B3D2E; display:flex; align-items:center; justify-content:center; flex-shrink:0;">
-    <span style="font-family:'Cormorant Garamond',serif; font-size:2em; font-weight:300; color:#9B3D2E; letter-spacing:0.06em;">WQ</span>
-  </div>
-</div>
-
 ### About
 
 Hi! I am a Postdoctoral Research Fellow at [UNIST](https://www.unist.ac.kr/), working with [Jaejun Yoo](https://sites.google.com/view/jaejunyoo/home) in the [Lab of Advanced Imaging Technology (LAIT)](https://sites.google.com/view/jaejunyoo/home). I received my Ph.D. from the [Graduate School of Data Science](https://gsds.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/en/), where I was advised by [Mun Yong Yi](http://kirc.kaist.ac.kr/people_director.html) as part of [KIRC](http://kirc.kaist.ac.kr/) (*Knowledge Innovation Research Center*). My research interests are in developing and applying deep learning-based systems to assist and improve the fields of healthcare, visual recognition, and computational imaging.
