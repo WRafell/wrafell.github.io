@@ -9,10 +9,6 @@ tags:
 excerpt: "A decentralized ML paradigm where clients collaboratively train a model without sharing private data."
 ---
 
-**Source:** McMahan et al., 2017 — *Communication-Efficient Learning of Deep Networks from Decentralized Data*
-
----
-
 ## Summary
 
 Federated Learning (FL) is a decentralized machine learning paradigm where multiple clients (e.g., mobile devices, organizations, IoT) collaboratively train a model coordinated by one or more central servers, without sharing private data. It addresses challenges like data privacy and data silos — isolated data accessible only to specific groups. Clients download a global model, train it locally on private data, and send encrypted updates (gradients or weights) to the server. The server aggregates these to update the global model, repeating until convergence. Data heterogeneity (non-IID data) often complicates convergence.
@@ -39,3 +35,7 @@ FL typically follows an *aggregate-then-adapt* loop:
 - **Data Heterogeneity (non-IID data):** Clients often have diverse, non-identically distributed data, which can slow or destabilize convergence.
 - **Communication Efficiency:** Frequent model exchange can be bandwidth-intensive.
 - **Privacy and Security:** Requires secure aggregation and client selection mechanisms.
+
+---
+
+**Source:** McMahan et al., 2017 — *Communication-Efficient Learning of Deep Networks from Decentralized Data*
