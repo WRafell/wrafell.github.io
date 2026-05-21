@@ -1,5 +1,5 @@
-## Hello world
+## wrafell.github.io
 
-Just my attempt of a personal academic website ~
+Personal site of Willmer Quinones — AI researcher, postdoctoral fellow at UNIST LAIT, working on representation learning, multimodal learning, and computational histopathology.
 
-The template was downloaded from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md. Thanks!
+Built with [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) (© Michael Rose, MIT License), customized with a warm dark editorial aesthetic.
