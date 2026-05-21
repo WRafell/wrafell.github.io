@@ -5,5 +5,3 @@ title: "Notes"
 author_profile: false
 paginate: true
 ---
-
-# Notes
