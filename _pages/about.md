@@ -12,7 +12,7 @@ redirect_from:
 
 ### About
 
-Hi! I am a Postdoctoral Research Associate at [UNIST](https://www.unist.ac.kr/), working with [Jaejun Yoo](https://sites.google.com/view/jaejunyoo/home) in the [Lab of Advanced Imaging Technology (LAIT)](https://sites.google.com/view/jaejunyoo/home). I received my Ph.D. from the [Graduate School of Data Science](https://gsds.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/en/), where I was advised by [Mun Yong Yi](http://kirc.kaist.ac.kr/people_director.html) as part of [KIRC](http://kirc.kaist.ac.kr/) (*Knowledge Innovation Research Center*). My research interests are in developing and applying deep learning-based systems to assist and improve the fields of healthcare, visual recognition, and computational imaging.
+I am a Postdoctoral Research Associate at [UNIST](https://www.unist.ac.kr/), working with [Jaejun Yoo](https://sites.google.com/view/jaejunyoo/home) in the [Lab of Advanced Imaging Technology (LAIT)](https://sites.google.com/view/jaejunyoo/home). I received my Ph.D. from the [Graduate School of Data Science](https://gsds.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/en/), where I was advised by [Mun Yong Yi](http://kirc.kaist.ac.kr/people_director.html) as part of [KIRC](http://kirc.kaist.ac.kr/) (*Knowledge Innovation Research Center*). My research interests are in developing and applying deep learning-based systems to assist and improve the fields of healthcare, visual recognition, and computational imaging.
 
 ### Education
 
