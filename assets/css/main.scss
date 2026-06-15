@@ -174,3 +174,27 @@ hr {
 }
 
 a { transition: color 0.2s ease; }
+
+// --- Notes: Times New Roman ---
+
+.notes-font {
+  .page__content,
+  .page__title,
+  .page__content h1,
+  .page__content h2,
+  .page__content h3,
+  .page__content h4,
+  .page__content h5,
+  .page__content h6,
+  .page__content p,
+  .page__content li {
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .page__content code,
+  .page__content pre,
+  .page__content kbd,
+  .page__content samp {
+    font-family: "IBM Plex Mono", monospace;
+  }
+}
