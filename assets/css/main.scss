@@ -9,22 +9,22 @@
 // Must be defined BEFORE skin/theme imports so !default is skipped
 // ============================================================
 
-// Warm dark palette
-$background-color: #111111;
-$text-color: #EAE6DC;
-$muted-text-color: #B8B3AA;
-$primary-color: #9B3D2E;
-$border-color: #252525;
-$code-background-color: #191919;
-$code-background-color-dark: #141414;
-$form-background-color: #1A1A1A;
-$footer-background-color: #0D0D0D;
-$link-color: #A14A3C;
-$link-color-hover: #BF6052;
-$link-color-visited: #7A3125;
-$masthead-link-color: #EAE6DC;
-$masthead-link-color-hover: #C8C3BA;
-$navicon-link-color-hover: #1A1A1A;
+// Light gray / black / terracotta palette
+$background-color: #ECEAE5;
+$text-color: #1A1A1A;
+$muted-text-color: #5C5852;
+$primary-color: #C16A4F;
+$border-color: #D6D2CB;
+$code-background-color: #E3E0DA;
+$code-background-color-dark: #DCD8D1;
+$form-background-color: #E3E0DA;
+$footer-background-color: #E3E0DA;
+$link-color: #C16A4F;
+$link-color-hover: #A85539;
+$link-color-visited: #8F4A33;
+$masthead-link-color: #1A1A1A;
+$masthead-link-color-hover: #C16A4F;
+$navicon-link-color-hover: #D6D2CB;
 
 // Typography
 $serif: "Cormorant Garamond", Georgia, serif;
@@ -65,8 +65,8 @@ code, pre, kbd, samp { font-family: "IBM Plex Mono", monospace; }
 // --- Masthead ---
 
 .masthead {
-  background-color: #0D0D0D;
-  border-bottom: 1px solid #1E1E1E;
+  background-color: #E3E0DA;
+  border-bottom: 1px solid #D6D2CB;
 }
 
 .site-title {
@@ -109,20 +109,20 @@ code, pre, kbd, samp { font-family: "IBM Plex Mono", monospace; }
 
   a {
     text-decoration: none;
-    border-bottom: 1px solid rgba(155, 61, 46, 0.35);
+    border-bottom: 1px solid rgba(193, 106, 79, 0.4);
     transition: border-color 0.2s ease, color 0.2s ease;
-    &:hover { border-color: rgba(155, 61, 46, 0.8); }
+    &:hover { border-color: rgba(193, 106, 79, 0.85); }
   }
 
   h3 {
     margin-top: 2em;
     padding-bottom: 0.3em;
-    border-bottom: 1px solid #252525;
+    border-bottom: 1px solid #D6D2CB;
     font-size: 1em;
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #B8B3AA;
+    color: #5C5852;
   }
 }
 
@@ -141,7 +141,7 @@ code, pre, kbd, samp { font-family: "IBM Plex Mono", monospace; }
 }
 
 .list__item {
-  border-bottom: 1px solid #1E1E1E;
+  border-bottom: 1px solid #D6D2CB;
   padding-bottom: 1.4em;
   margin-bottom: 1.4em;
 }
@@ -159,18 +159,18 @@ code, pre, kbd, samp { font-family: "IBM Plex Mono", monospace; }
   font-size: 0.78em;
   font-weight: 300;
   letter-spacing: 0.04em;
-  border-top: 1px solid #1E1E1E;
+  border-top: 1px solid #D6D2CB;
 }
 
 hr {
   border: none;
-  border-top: 1px solid #252525;
+  border-top: 1px solid #D6D2CB;
   margin: 2em 0;
 }
 
 .highlight {
   border-radius: 2px;
-  border: 1px solid #1E1E1E;
+  border: 1px solid #D6D2CB;
 }
 
 a { transition: color 0.2s ease; }

@@ -101,7 +101,7 @@ Hong et al. (2026) addresses a critical limitation of the previous hierarchy-awa
 
 Standard cross-entropy treats all misclassifications within a hierarchy level equally. To account for directional urgency, the authors define a regularization weight matrix $M^h = [M^h_{ij}] \in \mathbb{R}^{C_h \times C_h}$ at hierarchy level $h$, where $\alpha > 1$ is a scale hyperparameter:
 
-$$M^h_{ij} = \begin{cases} \alpha^{|i-j|}, & \text{if } c^h_i \succ c^h_j \\ 1, & \text{otherwise} \end{cases}$$
+$$M^h_{ij} = \begin{cases} \alpha^{|i-j|}, & \text{if } c^h_i \succ c^h_j \\\\ 1, & \text{otherwise} \end{cases}$$
 
 This matrix applies a stronger penalty when the model predicts a lower-urgency class ($c^h_j$) while the truth is a higher-urgency class ($c^h_i \succ c^h_j$), but not the reverse. The MSCE loss is then:
 
