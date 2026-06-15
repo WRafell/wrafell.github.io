@@ -12,21 +12,26 @@ redirect_from:
 
 ### About
 
-Hi! I am a Postdoctoral Research Fellow at [UNIST](https://www.unist.ac.kr/), working with [Jaejun Yoo](https://sites.google.com/view/jaejunyoo/home) in the [Lab of Advanced Imaging Technology (LAIT)](https://sites.google.com/view/jaejunyoo/home). I received my Ph.D. from the [Graduate School of Data Science](https://gsds.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/en/), where I was advised by [Mun Yong Yi](http://kirc.kaist.ac.kr/people_director.html) as part of [KIRC](http://kirc.kaist.ac.kr/) (*Knowledge Innovation Research Center*). My research interests are in developing and applying deep learning-based systems to assist and improve the fields of healthcare, visual recognition, and computational imaging.
+Hi! I am a Postdoctoral Research Associate at [UNIST](https://www.unist.ac.kr/), working with [Jaejun Yoo](https://sites.google.com/view/jaejunyoo/home) in the [Lab of Advanced Imaging Technology (LAIT)](https://sites.google.com/view/jaejunyoo/home). I received my Ph.D. from the [Graduate School of Data Science](https://gsds.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/en/), where I was advised by [Mun Yong Yi](http://kirc.kaist.ac.kr/people_director.html) as part of [KIRC](http://kirc.kaist.ac.kr/) (*Knowledge Innovation Research Center*). My research interests are in developing and applying deep learning-based systems to assist and improve the fields of healthcare, visual recognition, and computational imaging.
 
 ### Education
 
 - Ph.D., Graduate School of Data Science, KAIST, South Korea
-*Feb 2020 - Feb 2025*
-- M.S., Graduate School of Knowledge Service Engineering, KAIST, South Korea
-*Feb 2018 - Feb 2020*
+*Mar 2020 - Feb 2025*
+- M.S., Knowledge Service Engineering, KAIST, South Korea
+*Mar 2018 - Feb 2020*
 - B.S., Electronic and Communication Engineering, INTEC, Dominican Republic
 *Feb 2011 - Aug 2014*
 
 ### Experience
 
-- Postdoctoral Research Fellow, [LAIT](https://sites.google.com/view/jaejunyoo/home), UNIST, South Korea
-*Mar 2025 - Present*
+- Postdoctoral Research Associate, [LAIT](https://sites.google.com/view/jaejunyoo/home), UNIST, South Korea
+*Oct 2025 - Present*
+- PhD Researcher, [KIRC](http://kirc.kaist.ac.kr/), KAIST, South Korea
+*Mar 2020 - Feb 2025*
+- SCADA Engineer, Empresa de Transmisión Eléctrica Dominicana (ETED), Dominican Republic
+*Mar 2015 - Feb 2018*
+  - Engineer in the SCADA (Supervisory Control And Data Acquisition) department at the Centro de Control de Energía.
 
 ### Publications
 
