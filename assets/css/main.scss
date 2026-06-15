@@ -197,4 +197,9 @@ a { transition: color 0.2s ease; }
   .page__content samp {
     font-family: "IBM Plex Mono", monospace;
   }
+
+  .page__content strong,
+  .page__content b {
+    font-weight: 700;
+  }
 }
