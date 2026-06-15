@@ -57,11 +57,11 @@ The paper proposes two loss functions, each a one-parameter generalization of th
 
 When $\mathcal{H}$ is a tree, the class probability $p(C)$ factorizes along the path from leaf $C$ to the root $\mathcal{R}$:
 
-$$p(C) = \prod_{l=0}^{h-1} p\\!\left(C^{(l)} \mid C^{(l+1)}\right)$$
+$$p(C) = \prod_{l=0}^{h-1} p\!\left(C^{(l)} \mid C^{(l+1)}\right)$$
 
 where $C^{(0)} = C$, $C^{(h)} = \mathcal{R}$, and each conditional is computed from the leaf probabilities as $p(C^{(l)} \mid C^{(l+1)}) = \sum_{A \in \text{Leaves}(C^{(l)})} p(A) \;/\; \sum_{B \in \text{Leaves}(C^{(l+1)})} p(B)$. HXE is then the reweighted sum of the cross-entropies of these conditionals:
 
-$$\mathcal{L}_{\text{HXE}}(p, C) = -\sum_{l=0}^{h-1} \lambda(C^{(l)}) \log p\\!\left(C^{(l)} \mid C^{(l+1)}\right)$$
+$$\mathcal{L}_{\text{HXE}}(p, C) = -\sum_{l=0}^{h-1} \lambda(C^{(l)}) \log p\!\left(C^{(l)} \mid C^{(l+1)}\right)$$
 
 The weight assigned to each edge is $\lambda(C^{(l)}) = \exp(-\alpha \cdot h(C^{(l)}))$, where $h(C^{(l)})$ is the height of node $C^{(l)}$ and $\alpha > 0$ is a hyperparameter. Nodes *closer to the root* (higher $h$) receive *lower* weight, meaning the loss discounts coarse-level distinctions and focuses on fine-grained ones. When $\alpha \to 0$, all weights equal 1 and $\mathcal{L}_{\text{HXE}}$ reduces to the standard cross-entropy.
 
@@ -79,7 +79,7 @@ The paper uses two metrics based on the height of the LCA between the predicted 
 
 **Hierarchical distance of a mistake.** The LCA height $h(\text{LCA}(\hat{y}, y))$ is computed only for *misclassified* examples (where $\hat{y} \neq y$) and averaged over all such examples. This measures the severity of errors when a single top-1 prediction is considered.
 
-**Average hierarchical distance of top-$k$.** For each test example, the mean LCA height between the ground truth $y$ and each of the $k$ most likely predictions is computed, then averaged over the test set. This is relevant when multiple hypotheses can be considered by a downstream system, and is reported for $k \in \\{1, 5, 20\\}$.
+**Average hierarchical distance of top-$k$.** For each test example, the mean LCA height between the ground truth $y$ and each of the $k$ most likely predictions is computed, then averaged over the test set. This is relevant when multiple hypotheses can be considered by a downstream system, and is reported for $k \in \lbrace 1, 5, 20 \rbrace$.
 
 ### Key Findings and Limitations
 
@@ -93,7 +93,7 @@ The key limitation is that both the loss and the metric treat errors *symmetrica
 
 Hong et al. (2026) addresses a critical limitation of the previous hierarchy-aware methods, including Bertinetto et al. (2020): they treat the severity of a mistake symmetrically. In clinical diagnosis, however, misclassifying an urgent finding as a trivial one is incomparably more severe than the reverse. This paper introduces **PAMS** (**P**riority-**A**ware **M**istake **S**everity), an MIL-based training framework designed to address the asymmetry of misclassification risk in multiclass WSI diagnosis.
 
-**Problem Setting.** Each WSI $X_a$ is treated as a bag of patch-level instances $\\{x_{a,k}\\}_{k=1}^{n(X_a)}$. Although individual patch labels $y_{a,k}$ are unknown during training, the bag-level label $Y_a$ is assigned as the most severe diagnosis present among all patches $Y_a = \max_c\\!\left(\\{y_{a,k}\\}_{k=1}^{n(X_a)}\right)$, where classes are ordered by clinical urgency: $0 \prec 1 \prec \cdots \prec C-1$. A pre-trained feature extractor maps patches to encoded instances, which a MIL aggregator combines to predict the bag label $\hat{Y}_a$. To leverage the diagnostic hierarchy, PAMS trains one MIL classifier $f_{\theta_h}$ per hierarchy level $h$, from the finest level $\mathcal{H}$ (e.g., 7 cancer subtypes) up to a single root $\mathcal{R}$ (e.g., Benign / Atypical / Malignant), each with a separate classification head over the shared MIL backbone.
+**Problem Setting.** Each WSI $X_a$ is treated as a bag of patch-level instances $\lbrace x_{a,k} \rbrace_{k=1}^{n(X_a)}$. Although individual patch labels $y_{a,k}$ are unknown during training, the bag-level label $Y_a$ is assigned as the most severe diagnosis present among all patches $Y_a = \max_c\!\left(\lbrace y_{a,k} \rbrace_{k=1}^{n(X_a)}\right)$, where classes are ordered by clinical urgency: $0 \prec 1 \prec \cdots \prec C-1$. A pre-trained feature extractor maps patches to encoded instances, which a MIL aggregator combines to predict the bag label $\hat{Y}_a$. To leverage the diagnostic hierarchy, PAMS trains one MIL classifier $f_{\theta_h}$ per hierarchy level $h$, from the finest level $\mathcal{H}$ (e.g., 7 cancer subtypes) up to a single root $\mathcal{R}$ (e.g., Benign / Atypical / Malignant), each with a separate classification head over the shared MIL backbone.
 
 ### Methodology
 
@@ -101,7 +101,7 @@ Hong et al. (2026) addresses a critical limitation of the previous hierarchy-awa
 
 Standard cross-entropy treats all misclassifications within a hierarchy level equally. To account for directional urgency, the authors define a regularization weight matrix $M^h = [M^h_{ij}] \in \mathbb{R}^{C_h \times C_h}$ at hierarchy level $h$, where $\alpha > 1$ is a scale hyperparameter:
 
-$$M^h_{ij} = \begin{cases} \alpha^{|i-j|}, & \text{if } c^h_i \succ c^h_j \\\\ 1, & \text{otherwise} \end{cases}$$
+$$M^h_{ij} = \begin{cases} \alpha^{|i-j|}, & \text{if } c^h_i \succ c^h_j \\ 1, & \text{otherwise} \end{cases}$$
 
 This matrix applies a stronger penalty when the model predicts a lower-urgency class ($c^h_j$) while the truth is a higher-urgency class ($c^h_i \succ c^h_j$), but not the reverse. The MSCE loss is then:
 
@@ -197,7 +197,7 @@ Both papers propose metrics that go beyond top-$k$ accuracy to capture mistake q
 |---|---|---|
 | Top-$k$ error *(Both)* | Fraction of examples where the ground truth is not among the top-$k$ predictions. Treats all mistakes equally. | Lower $\downarrow$ |
 | Hier. dist. of a mistake *(Bertinetto)* | Mean $h(\text{LCA}(\hat{y}, y))$ over misclassified examples only ($\hat{y} \neq y$). | Lower $\downarrow$ |
-| Avg. hier. dist. top-$k$ *(Bertinetto)* | Mean $h(\text{LCA}(\hat{y}_i, y))$ over the $k$ most likely predictions per example, averaged over the test set. $k \in \\{1,5,20\\}$. | Lower $\downarrow$ |
+| Avg. hier. dist. top-$k$ *(Bertinetto)* | Mean $h(\text{LCA}(\hat{y}_i, y))$ over the $k$ most likely predictions per example, averaged over the test set. $k \in \lbrace 1,5,20 \rbrace$. | Lower $\downarrow$ |
 | AsCC *(Hong et al.)* | $\frac{1}{\sum_{i,j} S^h_{i,j}} \sum_{i,j} \frac{S^h_{i,j}}{W^h_{i,j}}$, with $W^h_{i,j} = 1 + \lvert i-j \rvert + \mathbb{1}(c^h_i \succ c^h_j) P$. Severity over all samples. | Higher $\uparrow$ |
 | AsMC *(Hong et al.)* | $\frac{1}{\sum_{i \neq j} S^h_{i,j}} \sum_{i \neq j} \frac{S^h_{i,j}}{W^h_{i,j}-1}$. Same $W^h_{i,j}$, restricted to misclassified samples only. | Higher $\uparrow$ |
 
