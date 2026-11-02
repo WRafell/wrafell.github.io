@@ -24,6 +24,8 @@ I am a Postdoctoral Research Associate at [UNIST](https://www.unist.ac.kr/), wor
 *Oct 2025 - Present*
 - PhD Researcher, [KIRC](http://kirc.kaist.ac.kr/), KAIST, South Korea
 *Mar 2020 - Feb 2025*
+- Master Student Researcher, [KIRC](http://kirc.kaist.ac.kr/), KAIST, South Korea
+*Mar 2018 - Feb 2020*
 - SCADA Engineer, Empresa de Transmisión Eléctrica Dominicana (ETED), Dominican Republic
 *Mar 2015 - Feb 2018*
   - Engineer in the SCADA (Supervisory Control And Data Acquisition) department at the Centro de Control de Energía.
