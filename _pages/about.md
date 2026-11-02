@@ -33,7 +33,7 @@ I am a Postdoctoral Research Associate at [UNIST](https://www.unist.ac.kr/), wor
 
 ## Publications
 
-- **Quinones Robles, W.R.**, Noree, S., Ko, Y.S. and Yi, M.Y., 2026. [Fractal-based artificial class activation maps for data augmentation in whole-slide image analysis](https://www.nature.com/articles/s41598-026-65238-5). Scientific Reports.
+- **Quinones Robles, W.R.**, Noree, S., Ko, Y.S. and Yi, M.Y., 2026. Fractal-based artificial class activation maps for data augmentation in whole-slide image analysis. Scientific Reports.
 
 - Kim, J. W., Wong, B., Fu, H., **Quiñones Robles, W. R.**, Ko, Y. S., & Yi, M. Y. (2025). MicroMIL: Graph-Based Multiple Instance Learning for Context-Aware Diagnosis with Microscopic Images. In International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI).
 
