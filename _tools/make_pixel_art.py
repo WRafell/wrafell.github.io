@@ -162,9 +162,27 @@ def glyph_print(scale, name, border=3):
     img.resize((size * scale, size * scale), Image.NEAREST).save(OUT / name, optimize=True)
 
 
+def share_image(name="og-image.png", w=1200, h=630, scale=21):
+    """Link-preview card: the 윌 print centred on ivory paper with a hard shadow."""
+    glyph_print(1, "_tmp_will.png")
+    tile = Image.open(OUT / "_tmp_will.png")
+    (OUT / "_tmp_will.png").unlink()
+    size = tile.width * scale
+    tile = tile.resize((size, size), Image.NEAREST)
+    alpha = tile.split()[3]
+    card = Image.new("RGB", (w, h), PAPER)
+    x, y = (w - size) // 2, (h - size) // 2
+    shadow = Image.new("RGB", tile.size, (221, 203, 201))  # --mauve-pale
+    off = scale
+    card.paste(shadow, (x + off, y + off), alpha)
+    card.paste(tile.convert("RGB"), (x, y), alpha)
+    card.save(OUT / name, optimize=True)
+
+
 if __name__ == "__main__":
     portrait(OUT / "profile-photo.jpg")
     fern_print()
     glyph_print(1, "will.png")
     glyph_print(2, "favicon.png")
+    share_image()
     print("done")
