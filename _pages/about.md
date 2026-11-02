@@ -1,20 +1,14 @@
 ---
 permalink: /
-layout: single
+layout: about
 title: "About"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
-
+lede: "Deep learning systems for healthcare, visual recognition, and computational imaging."
 ---
-
-### About
+## About
 
 I am a Postdoctoral Research Associate at [UNIST](https://www.unist.ac.kr/), working with [Jaejun Yoo](https://sites.google.com/view/jaejunyoo/home) in the [Lab of Advanced Imaging Technology (LAIT)](https://sites.google.com/view/jaejunyoo/home). I received my Ph.D. from the [Graduate School of Data Science](https://gsds.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/en/), where I was advised by [Mun Yong Yi](http://kirc.kaist.ac.kr/people_director.html) as part of [KIRC](http://kirc.kaist.ac.kr/) (*Knowledge Innovation Research Center*). My research interests are in developing and applying deep learning-based systems to assist and improve the fields of healthcare, visual recognition, and computational imaging.
 
-### Education
+## Education
 
 - Ph.D., Graduate School of Data Science, KAIST, South Korea
 *Mar 2020 - Feb 2025*
@@ -22,8 +16,9 @@ I am a Postdoctoral Research Associate at [UNIST](https://www.unist.ac.kr/), wor
 *Mar 2018 - Feb 2020*
 - B.S., Electronic and Communication Engineering, INTEC, Dominican Republic
 *Feb 2011 - Aug 2014*
+{: .timeline}
 
-### Experience
+## Experience
 
 - Postdoctoral Research Associate, [LAIT](https://sites.google.com/view/jaejunyoo/home), UNIST, South Korea
 *Oct 2025 - Present*
@@ -32,8 +27,9 @@ I am a Postdoctoral Research Associate at [UNIST](https://www.unist.ac.kr/), wor
 - SCADA Engineer, Empresa de Transmisión Eléctrica Dominicana (ETED), Dominican Republic
 *Mar 2015 - Feb 2018*
   - Engineer in the SCADA (Supervisory Control And Data Acquisition) department at the Centro de Control de Energía.
+{: .timeline}
 
-### Publications
+## Publications
 
 - **Quinones, W. R.**, Ashraf, M., & Yi, M. Y. (2021, December). Impact of Patch Extraction Variables on Histopathological Imagery Classification Using Convolution Neural Networks. In 2021 International Conference on Computational Science and Computational Intelligence (CSCI) (pp. 1176-1181). IEEE.
 
@@ -46,9 +42,11 @@ I am a Postdoctoral Research Associate at [UNIST](https://www.unist.ac.kr/), wor
 - Noree, S., **Quiñones Robles, W. R.**, Ko, Y. S., & Yi, M. Y. (2025). Leveraging commonality across multiple tissue slices for enhanced whole slide image classification using graph convolutional networks. BMC Medical Imaging, 25(1), 11.
 
 - Kim, J. W., Wong, B., Fu, H., **Quiñones Robles, W. R.**, Ko, Y. S., & Yi, M. Y. (2025). MicroMIL: Graph-Based Multiple Instance Learning for Context-Aware Diagnosis with Microscopic Images. In International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI).
+{: .pubs}
 
-### Preprints / Under Review
+## Preprints / Under Review
 
 - **Quiñones Robles, W. R.**, Noree, S., Ko, Y. S., & Yi, M. Y. (2024). Artificial Feature Maps using Fractals: A New Data Augmentation Strategy for Deep Learning-based Whole-Slide Image Analysis. Under Review.
 
 - **Quiñones Robles, W. R.**, Noree, S., Ko, Y. S., Wong, B., Kim, J., & Yi, M. Y. (2025). Leveraging Spatial Context for Positive Pair Sampling in Histopathology Image Representation Learning. arXiv preprint.
+{: .pubs}

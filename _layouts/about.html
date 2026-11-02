@@ -1,0 +1,49 @@
+---
+layout: default
+body_class: is-about
+---
+<section class="hero">
+  <figure class="print portrait">
+    <img src="{{ '/assets/images/portrait-pixel.png' | relative_url }}" alt="Pixel-dithered cyanotype portrait" width="96" height="96">
+    <figcaption>fig. 1 &mdash; portrait, 96&times;96</figcaption>
+  </figure>
+
+  <div class="hero-text">
+    <p class="kicker">{{ site.author.role }} &middot; {{ site.author.affiliation }}</p>
+    <h1 class="name">{{ site.author.name }}</h1>
+    <p class="lede">{{ page.lede }}</p>
+    <ul class="link-row">
+      {% for link in site.author.links %}
+      <li><a class="pixel-btn" href="{{ link.url | relative_url }}">{{ link.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<div class="about-body">
+  <article class="prose">
+    {{ content }}
+  </article>
+
+  <aside class="side">
+    <figure class="print fern">
+      <img src="{{ '/assets/images/fern-print.png' | relative_url }}" alt="Pixel cyanotype photogram of a Barnsley fern" width="84" height="112">
+      <figcaption>fig. 2 &mdash; Barnsley fern, IFS</figcaption>
+    </figure>
+
+    {% if site.posts.size > 0 %}
+    <div class="side-block">
+      <h2 class="label">Latest writing</h2>
+      <ul class="mini-list">
+        {% for post in site.posts limit: 3 %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+        </li>
+        {% endfor %}
+      </ul>
+      <a class="more" href="{{ '/writing/' | relative_url }}">All writing &rarr;</a>
+    </div>
+    {% endif %}
+  </aside>
+</div>

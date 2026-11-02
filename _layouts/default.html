@@ -1,43 +1,66 @@
----
-layout: compress
----
-
 <!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.20.1 by Michael Rose
-  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
--->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.url == "/" %}
+  <title>{{ site.title }}</title>
+  {% else %}
+  <title>{{ page.title }} · {{ site.title }}</title>
+  {% endif %}
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    {% include_cached skip-links.html %}
-    {% include_cached browser-upgrade.html %}
-    {% include_cached masthead.html %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pixelify+Sans:wght@400;500;600&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-    <div class="initial-content">
-      {{ content }}
-    </div>
+  {% if page.mathjax %}
+  <script>
+    MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+  {% endif %}
+</head>
 
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include_cached search/search_form.html %}
-      </div>
-    {% endif %}
+<body class="{{ page.body_class | default: layout.body_class }}">
+  <a class="skip" href="#main">Skip to content</a>
 
-    <div id="footer" class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include_cached footer.html %}
-      </footer>
-    </div>
+  <header class="site-header">
+    <a class="wordmark" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/will.png' | relative_url }}" alt="윌" width="44" height="44">
+      <span>{{ site.short_title }}</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      {% for link in site.data.navigation.main %}
+        {% assign is_current = false %}
+        {% if link.url == "/" and page.url == "/" %}{% assign is_current = true %}{% endif %}
+        {% if link.url != "/" and page.url contains link.url %}{% assign is_current = true %}{% endif %}
+        {% if link.url == "/writing/" and page.layout == "post" %}{% assign is_current = true %}{% endif %}
+        <a href="{{ link.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}>{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+  </header>
 
-    {% include scripts.html %}
+  <main id="main">
+    {{ content }}
+  </main>
 
-  </body>
+  <footer class="site-footer">
+    <div class="pixel-rule" aria-hidden="true"></div>
+    <p>
+      <span>&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</span>
+      <span class="footer-links">
+        {% for link in site.author.links %}<a href="{{ link.url | relative_url }}">{{ link.label }}</a>{% endfor %}
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </span>
+    </p>
+  </footer>
+</body>
 </html>

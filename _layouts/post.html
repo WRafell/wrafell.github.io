@@ -1,0 +1,34 @@
+---
+layout: default
+body_class: is-post
+---
+{% assign words = content | number_of_words %}
+{% assign minutes = words | divided_by: 200 | at_least: 1 %}
+<article class="post">
+  <header class="post-header">
+    <a class="back" href="{{ '/writing/' | relative_url }}">&larr; Writing</a>
+    <p class="meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %b %Y" }}</time>
+      <span>{{ minutes }} min read</span>
+    </p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.excerpt %}
+    <p class="post-dek">{{ page.excerpt | strip_html }}</p>
+    {% endif %}
+    {% if page.tags.size > 0 %}
+    <ul class="tags">{% for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+    {% endif %}
+  </header>
+
+  <div class="prose post-body">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <div class="pixel-rule" aria-hidden="true"></div>
+    <nav class="post-pager" aria-label="More writing">
+      {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>Older</span>{{ page.previous.title }}</a>{% else %}<span></span>{% endif %}
+      {% if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><span>Newer</span>{{ page.next.title }}</a>{% endif %}
+    </nav>
+  </footer>
+</article>

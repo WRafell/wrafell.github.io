@@ -1,6 +1,5 @@
-# main links
 main:
   - title: "About"
     url: /
-  - title: "Notes"
-    url: /notes/
+  - title: "Writing"
+    url: /writing/
