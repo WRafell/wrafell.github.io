@@ -33,19 +33,19 @@ I am a Postdoctoral Research Associate at [UNIST](https://www.unist.ac.kr/), wor
 
 ## Publications
 
-- **Quinones, W. R.**, Ashraf, M., & Yi, M. Y. (2021, December). Impact of Patch Extraction Variables on Histopathological Imagery Classification Using Convolution Neural Networks. In 2021 International Conference on Computational Science and Computational Intelligence (CSCI) (pp. 1176-1181). IEEE.
-
-- Ashraf, M., **Quinones, W. R.**, Kim, M., Ko, Y. S., & Yi, M. Y. (2022). A loss-based patch label denoising method for improving whole-slide image analysis using a convolutional neural network. Scientific reports, 12(1), 1392.
-
-- Ko, Y. S., Choi, Y. M., Kim, M., Park, Y., Ashraf, M., **Quiñones Robles, W. R.**, ... & Yi, M. Y. (2022). Improving quality control in the routine practice for histopathological interpretation of gastrointestinal endoscopic biopsies using artificial intelligence. Plos one, 17(12), e0278542.
-
-- Kim, M., **Quiñones Robles, W. R.**, Ko, Y. S., Wong, B., Lee, S., & Yi, M. Y. (2024). A predicted-loss based active learning approach for robust cancer pathology image analysis in the workplace. BMC Medical Imaging, 24(1), 5.
-
-- Noree, S., **Quiñones Robles, W. R.**, Ko, Y. S., & Yi, M. Y. (2025). Leveraging commonality across multiple tissue slices for enhanced whole slide image classification using graph convolutional networks. BMC Medical Imaging, 25(1), 11.
+- **Quinones Robles, W.R.**, Noree, S., Ko, Y.S. and Yi, M.Y., 2026. [Fractal-based artificial class activation maps for data augmentation in whole-slide image analysis](https://www.nature.com/articles/s41598-026-65238-5). Scientific Reports.
 
 - Kim, J. W., Wong, B., Fu, H., **Quiñones Robles, W. R.**, Ko, Y. S., & Yi, M. Y. (2025). MicroMIL: Graph-Based Multiple Instance Learning for Context-Aware Diagnosis with Microscopic Images. In International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI).
 
-- **Quinones Robles, W.R.**, Noree, S., Ko, Y.S. and Yi, M.Y., 2026. [Fractal-based artificial class activation maps for data augmentation in whole-slide image analysis](https://www.nature.com/articles/s41598-026-65238-5). Scientific Reports.
+- Noree, S., **Quiñones Robles, W. R.**, Ko, Y. S., & Yi, M. Y. (2025). Leveraging commonality across multiple tissue slices for enhanced whole slide image classification using graph convolutional networks. BMC Medical Imaging, 25(1), 11.
+
+- Kim, M., **Quiñones Robles, W. R.**, Ko, Y. S., Wong, B., Lee, S., & Yi, M. Y. (2024). A predicted-loss based active learning approach for robust cancer pathology image analysis in the workplace. BMC Medical Imaging, 24(1), 5.
+
+- Ko, Y. S., Choi, Y. M., Kim, M., Park, Y., Ashraf, M., **Quiñones Robles, W. R.**, ... & Yi, M. Y. (2022). Improving quality control in the routine practice for histopathological interpretation of gastrointestinal endoscopic biopsies using artificial intelligence. Plos one, 17(12), e0278542.
+
+- Ashraf, M., **Quinones, W. R.**, Kim, M., Ko, Y. S., & Yi, M. Y. (2022). A loss-based patch label denoising method for improving whole-slide image analysis using a convolutional neural network. Scientific reports, 12(1), 1392.
+
+- **Quinones, W. R.**, Ashraf, M., & Yi, M. Y. (2021, December). Impact of Patch Extraction Variables on Histopathological Imagery Classification Using Convolution Neural Networks. In 2021 International Conference on Computational Science and Computational Intelligence (CSCI) (pp. 1176-1181). IEEE.
 {: .pubs}
 
 ## Preprints / Under Review
