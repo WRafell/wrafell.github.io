@@ -42,11 +42,11 @@ I am a Postdoctoral Research Associate at [UNIST](https://www.unist.ac.kr/), wor
 - Noree, S., **Quiñones Robles, W. R.**, Ko, Y. S., & Yi, M. Y. (2025). Leveraging commonality across multiple tissue slices for enhanced whole slide image classification using graph convolutional networks. BMC Medical Imaging, 25(1), 11.
 
 - Kim, J. W., Wong, B., Fu, H., **Quiñones Robles, W. R.**, Ko, Y. S., & Yi, M. Y. (2025). MicroMIL: Graph-Based Multiple Instance Learning for Context-Aware Diagnosis with Microscopic Images. In International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI).
+
+- **Quinones Robles, W.R.**, Noree, S., Ko, Y.S. and Yi, M.Y., 2026. [Fractal-based artificial class activation maps for data augmentation in whole-slide image analysis](https://www.nature.com/articles/s41598-026-65238-5). Scientific Reports.
 {: .pubs}
 
 ## Preprints / Under Review
-
-- **Quiñones Robles, W. R.**, Noree, S., Ko, Y. S., & Yi, M. Y. (2024). Artificial Feature Maps using Fractals: A New Data Augmentation Strategy for Deep Learning-based Whole-Slide Image Analysis. Under Review.
 
 - **Quiñones Robles, W. R.**, Noree, S., Ko, Y. S., Wong, B., Kim, J., & Yi, M. Y. (2025). Leveraging Spatial Context for Positive Pair Sampling in Histopathology Image Representation Learning. arXiv preprint.
 {: .pubs}
