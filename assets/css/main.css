@@ -571,7 +571,7 @@ mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; max-width:
 
 /* ---------- single post ---------- */
 
-.post { max-width: var(--measure); margin: 0 auto; }
+.post { max-width: 48rem; margin: 0 auto; }
 .post-header { padding: 1.5rem 0 1rem; }
 .back {
   font-family: var(--font-label);
@@ -605,6 +605,7 @@ mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; max-width:
 }
 
 .post-body {
+  max-width: none;
   font-family: var(--font-post);
   font-size: 1.25rem;
   line-height: 1.75;
