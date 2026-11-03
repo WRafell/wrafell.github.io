@@ -20,24 +20,24 @@
   --wide: 1080px;
 
   --font-body: "EB Garamond", Garamond, "Times New Roman", serif;
-  --font-post: "Times New Roman", Times, serif;
+  --font-post: "Literata", Georgia, serif;
   --font-pixel: "Pixelify Sans", "Silkscreen", monospace;
   --font-label: "Silkscreen", "Pixelify Sans", monospace;
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
 
-/* Dark mode: paper and ink swap; teal is lifted so it stays legible on burgundy */
+/* Dark mode: near-black brown paper, ivory ink; teal is lifted so it stays legible */
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --paper: #4B2533;
-  --paper-deep: #5A3040;
+  --paper: #1C1513;
+  --paper-deep: #2A201D;
   --ink: #F3EBDD;
   --ink-soft: #DCCBC0;
   --mauve: #B795A2;
-  --mauve-pale: #6B3E50;
+  --mauve-pale: #4A3036;
   --teal: #7FA8A4;
   --teal-deep: #A9CBC6;
-  --teal-wash: #3E5C5D;
+  --teal-wash: #2F4847;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -606,8 +606,8 @@ mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; max-width:
 
 .post-body {
   font-family: var(--font-post);
-  font-size: 1.15rem;
-  line-height: 1.7;
+  font-size: 1.25rem;
+  line-height: 1.75;
 }
 .post-body > h1:first-child { display: none; } /* title is already in the header */
 .post-body h1 { font-size: 1.6rem; font-weight: 700; margin: 2.5rem 0 1rem; }
@@ -655,6 +655,8 @@ mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; max-width:
   .side { grid-template-columns: 1fr; }
   .side .fern { max-width: 150px; }
 
+  .post-body { font-size: 1.125rem; line-height: 1.7; }
+  .post-dek { font-size: 1.125rem; }
   .post-list > li { grid-template-columns: 1fr; gap: 0.35rem; }
   .post-list time { padding-top: 0; }
   .post-link { font-size: 1.35rem; }
