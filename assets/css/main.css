@@ -26,6 +26,20 @@
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
 
+/* Dark mode: paper and ink swap; teal is lifted so it stays legible on burgundy */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #4B2533;
+  --paper-deep: #5A3040;
+  --ink: #F3EBDD;
+  --ink-soft: #DCCBC0;
+  --mauve: #B795A2;
+  --mauve-pale: #6B3E50;
+  --teal: #7FA8A4;
+  --teal-deep: #A9CBC6;
+  --teal-wash: #3E5C5D;
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 
 html {
@@ -214,6 +228,59 @@ a:focus-visible { outline: 2px solid var(--teal-deep); outline-offset: 2px; }
   background-repeat: no-repeat;
 }
 .site-nav a:hover { color: var(--ink); background-color: var(--teal-wash); }
+
+.site-header { position: relative; }
+.header-tools { display: flex; align-items: center; gap: 0.35rem; }
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.icon-btn:hover { color: var(--ink); background: var(--teal-wash); }
+.icon-btn:focus-visible { outline: 2px solid var(--teal-deep); outline-offset: 2px; }
+.icon-btn svg { width: 18px; height: 18px; shape-rendering: crispEdges; }
+
+.theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+/* hamburger: only on narrow screens, and only when JS can open it */
+.menu-toggle { display: none; }
+.menu-toggle .icon-close { display: none; }
+.is-open .menu-toggle .icon-close { display: block; }
+.is-open .menu-toggle .icon-menu { display: none; }
+
+@media (max-width: 640px) {
+  .js .menu-toggle { display: inline-flex; }
+  .js .site-nav {
+    display: none;
+    position: absolute;
+    top: calc(100% - 0.5rem);
+    right: 1rem;
+    z-index: 5;
+    flex-direction: column;
+    gap: 0;
+    min-width: 11rem;
+    padding: 0.5rem;
+    background: var(--paper-deep);
+    box-shadow: calc(var(--px) * 2) calc(var(--px) * 2) 0 var(--mauve-pale);
+  }
+  .js .is-open .site-nav { display: flex; }
+  .js .site-nav a { padding: 0.7rem 0.75rem; }
+  .js .site-nav a[aria-current="page"] {
+    background-size: var(--px) 100%;
+    background-position: 0 0;
+    padding-left: 1rem;
+  }
+}
 
 .site-footer { padding-top: 4rem; padding-bottom: 2.5rem; }
 .site-footer p {

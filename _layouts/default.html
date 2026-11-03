@@ -31,6 +31,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pixelify+Sans:wght@400;500;600&family=Silkscreen&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <script>
+    // apply the saved theme before first paint
+    try { if (localStorage.getItem("theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+    document.documentElement.classList.add("js"); // the collapsible menu needs JS
+  </script>
 
   {% if page.mathjax %}
   <script>
@@ -51,15 +56,25 @@
       <img src="{{ '/assets/images/will.png' | relative_url }}" alt="윌" width="44" height="44">
       <span>{{ site.short_title }}</span>
     </a>
-    <nav class="site-nav" aria-label="Main">
-      {% for link in site.data.navigation.main %}
-        {% assign is_current = false %}
-        {% if link.url == "/" and page.url == "/" %}{% assign is_current = true %}{% endif %}
-        {% if link.url != "/" and page.url contains link.url %}{% assign is_current = true %}{% endif %}
-        {% if link.url == "/writing/" and page.layout == "post" %}{% assign is_current = true %}{% endif %}
-        <a href="{{ link.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}>{{ link.title }}</a>
-      {% endfor %}
-    </nav>
+    <div class="header-tools">
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        {% for link in site.data.navigation.main %}
+          {% assign is_current = false %}
+          {% if link.url == "/" and page.url == "/" %}{% assign is_current = true %}{% endif %}
+          {% if link.url != "/" and page.url contains link.url %}{% assign is_current = true %}{% endif %}
+          {% if link.url == "/writing/" and page.layout == "post" %}{% assign is_current = true %}{% endif %}
+          <a href="{{ link.url | relative_url }}"{% if is_current %} aria-current="page"{% endif %}>{{ link.title }}</a>
+        {% endfor %}
+      </nav>
+      <button class="theme-toggle icon-btn" type="button" aria-label="Dark mode" aria-pressed="false">
+        <svg class="icon-moon" viewBox="-1.5 0 9 9" aria-hidden="true"><path fill="currentColor" d="M2 0h4v1h-4zM1 1h3v1h-3zM0 2h3v1h-3zM0 3h3v1h-3zM0 4h3v1h-3zM0 5h3v1h-3zM0 6h3v1h-3zM1 7h3v1h-3zM2 8h4v1h-4z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 9 9" aria-hidden="true"><path fill="currentColor" d="M4 0h1v1h-1zM1 1h1v1h-1zM7 1h1v1h-1zM3 2h3v1h-3zM2 3h5v1h-5zM0 4h1v1h-1zM2 4h5v1h-5zM8 4h1v1h-1zM2 5h5v1h-5zM3 6h3v1h-3zM1 7h1v1h-1zM7 7h1v1h-1zM4 8h1v1h-1z"/></svg>
+      </button>
+      <button class="menu-toggle icon-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon-menu" viewBox="0 0 9 9" aria-hidden="true"><path fill="currentColor" d="M0 1h9v1h-9zM0 4h9v1h-9zM0 7h9v1h-9z"/></svg>
+        <svg class="icon-close" viewBox="0 0 9 9" aria-hidden="true"><path fill="currentColor" d="M0 0h1v1h-1zM8 0h1v1h-1zM1 1h1v1h-1zM7 1h1v1h-1zM2 2h1v1h-1zM6 2h1v1h-1zM3 3h1v1h-1zM5 3h1v1h-1zM4 4h1v1h-1zM3 5h1v1h-1zM5 5h1v1h-1zM2 6h1v1h-1zM6 6h1v1h-1zM1 7h1v1h-1zM7 7h1v1h-1zM0 8h1v1h-1zM8 8h1v1h-1z"/></svg>
+      </button>
+    </div>
   </header>
 
   <main id="main">
@@ -76,5 +91,32 @@
       </span>
     </p>
   </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var button = document.querySelector(".theme-toggle");
+      function sync() { button.setAttribute("aria-pressed", root.dataset.theme === "dark"); }
+      sync();
+      button.addEventListener("click", function () {
+        var dark = root.dataset.theme !== "dark";
+        if (dark) root.dataset.theme = "dark"; else delete root.dataset.theme;
+        try { localStorage.setItem("theme", dark ? "dark" : "light"); } catch (e) {}
+        sync();
+      });
+
+      var header = document.querySelector(".site-header");
+      var menu = document.querySelector(".menu-toggle");
+      function setOpen(open) {
+        header.classList.toggle("is-open", open);
+        menu.setAttribute("aria-expanded", open);
+      }
+      menu.addEventListener("click", function () { setOpen(!header.classList.contains("is-open")); });
+      document.addEventListener("click", function (e) { if (!header.contains(e.target)) setOpen(false); });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && header.classList.contains("is-open")) { setOpen(false); menu.focus(); }
+      });
+    })();
+  </script>
 </body>
 </html>
