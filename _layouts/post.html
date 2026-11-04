@@ -25,7 +25,6 @@ body_class: is-post
   </div>
 
   <footer class="post-footer">
-    <div class="pixel-rule" aria-hidden="true"></div>
     <nav class="post-pager" aria-label="More writing">
       {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>Older</span>{{ page.previous.title }}</a>{% else %}<span></span>{% endif %}
       {% if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><span>Newer</span>{{ page.next.title }}</a>{% endif %}
